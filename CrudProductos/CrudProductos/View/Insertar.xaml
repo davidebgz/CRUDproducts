@@ -25,7 +25,7 @@
                 
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding NombreProducto}" Detail="{Binding IdProducto}">
+                        <TextCell Text="{Binding NombreProducto}" >
                         </TextCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>

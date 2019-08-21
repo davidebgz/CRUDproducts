@@ -5,11 +5,41 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="CrudProductos.View.Ver">
+   
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+
+            <StackLayout Orientation="Horizontal" BackgroundColor="Aqua">
+
+                <Button Text="Ver Categorias" x:Name="BtnCategoria" Clicked="BtnCategoria_Clicked"></Button>
+                <Button Text="+" x:Name="BtnNuevo" Clicked="BtnNuevo_Clicked"></Button>
+
+
+            </StackLayout>
+            <StackLayout BackgroundColor="Aqua">
+                <SearchBar x:Name="Buscador" Placeholder="Inserte ID"></SearchBar>
+            </StackLayout>
+
+
+
+            <ListView x:Name="Categoria__" ItemSelected="Categoria___ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding NameCategory}" Detail="{Binding IdCategory}"></TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+            <ListView x:Name="Productos_ListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding NameProduct}" Detail="{Binding IdCategory}"></TextCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

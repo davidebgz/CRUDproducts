@@ -53,7 +53,7 @@ namespace CrudProductos.View
                     Base.InsertarProducto(productoInsertar);
 
                 }
-                App.Current.MainPage = new NavigationPage(new Ver());
+                 Navigation.PushAsync(new Ver());
             }
             else
             {

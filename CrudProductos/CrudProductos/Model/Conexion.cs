@@ -49,6 +49,10 @@ namespace CrudProductos.Model
         {
             return DataBase.Table<Producto>().Where(n => n.IdCategoria == idCategoria).ToList();
         }
+        public List<Producto> buscar(string text)
+        {
+            return DataBase.Table<Producto>().Where(n => n.NombreProducto.ToLower().StartsWith(text)).ToList();
+        }
     }
 }
             
