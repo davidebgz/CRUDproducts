@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using CrudProductos.View;
 
 namespace CrudProductos
 {
@@ -10,7 +11,7 @@ namespace CrudProductos
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage (new Insertar());
         }
 
         protected override void OnStart()

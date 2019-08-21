@@ -6,6 +6,7 @@
              mc:Ignorable="d"
              x:Class="CrudProductos.View.Insertar">
     <ContentPage.Content>
+        
         <StackLayout>
 
 
@@ -17,23 +18,27 @@
             <Label Text="Datos de productos"  HorizontalOptions="Center" FontSize="Medium"/>
             <Entry Placeholder="Product Name" x:Name="EntProducto" FontSize="10"/>
             <Button Text="ADD" x:Name="Add" Clicked="Add_Clicked"/>
+                <ScrollView>
 
 
             <ListView x:Name="Productos">
+                
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding NameProduct}">
+                        <TextCell Text="{Binding NombreProducto}" Detail="{Binding IdProducto}">
                         </TextCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                </ScrollView>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
 
                 <Button Text="Ver" x:Name="BtnVer" Clicked="BtnVer_Clicked" ></Button>
                 <Button Text="Guardar" x:Name="EntGuardar" Clicked="EntGuardar_Clicked"></Button>
-                <Label Text=""/>
+               
 
             </StackLayout>
         </StackLayout>
+        
     </ContentPage.Content>
 </ContentPage>
