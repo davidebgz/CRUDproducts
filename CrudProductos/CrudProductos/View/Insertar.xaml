@@ -11,12 +11,12 @@
 
 
             <Label Text="Datos de categoria" HorizontalOptions="Center" FontSize="Medium"/>
-            <Entry Placeholder="Category Name" x:Name="CategoryEntry" FontSize="10"/>
-            <Entry Placeholder="Description &#10;" x:Name="DescripcionEntry" FontSize="10"/>
+            <Entry Placeholder="Category Name" x:Name="EntCategory" FontSize="10"/>
+            <Entry Placeholder="Description &#10;" x:Name="EntDescripcion" FontSize="10"/>
 
             <Label Text="Datos de productos"  HorizontalOptions="Center" FontSize="Medium"/>
-            <Entry Placeholder="Product Name" x:Name="ProductoEntry" FontSize="10"/>
-            <Button Text="ADD" Clicked="Button_Clicked"/>
+            <Entry Placeholder="Product Name" x:Name="EntProducto" FontSize="10"/>
+            <Button Text="ADD" x:Name="Add" Clicked="Add_Clicked"/>
 
 
             <ListView x:Name="Productos">
@@ -29,8 +29,8 @@
             </ListView>
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
 
-                <Button Text="Ver" Clicked="Button_Clicked_2" ></Button>
-                <Button Text="Guardar" Clicked="Button_Clicked_1"></Button>
+                <Button Text="Ver" x:Name="BtnVer" Clicked="BtnVer_Clicked" ></Button>
+                <Button Text="Guardar" x:Name="EntGuardar" Clicked="EntGuardar_Clicked"></Button>
                 <Label Text=""/>
 
             </StackLayout>

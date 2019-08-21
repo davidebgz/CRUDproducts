@@ -16,5 +16,20 @@ namespace CrudProductos.View
         {
             InitializeComponent();
         }
+
+        private void Add_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnVer_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EntGuardar_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
